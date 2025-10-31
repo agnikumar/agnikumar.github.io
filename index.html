@@ -1,166 +1,214 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agni Kumar</title>
+    <link rel="icon" type="image/png" href="https://api.dicebear.com/7.x/initials/svg?seed=YN&backgroundColor=667eea">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            color: #333;
+        }
 
-  <title>Agni Kumar</title>
-  <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.">
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 1000px;
+            width: 100%;
+            padding: 60px 50px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
 
-  <link rel="shortcut icon" href="/assets/img/myfavicon.ico">
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="canonical" href="/">
+        .profile-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            border: 4px solid #667eea;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+
+        .description {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+
+        .resume-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .resume-link:hover {
+            opacity: 0.7;
+        }
+
+        .resume-link svg {
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .link-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .link-button svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .title {
+                font-size: 1rem;
+            }
+
+            .links {
+                flex-direction: column;
+            }
+
+            .link-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
+<body>
+    <div class="container">
+        <img src="images/profile.png" alt="Agni Kumar" class="profile-image">
+        
+        <h1>Agni Kumar</h1>
+        <p class="title">Machine Learning Research Engineer</p>
+        
+        <p class="description">
+            
+            Welcome! I'm a <strong>Machine Learning Research Engineer</strong> at Apple working at the intersection of multimodal foundation models, self-supervised learning, and large-scale representation learning. I graduated from the <strong>Massachusetts Institute of Technology (MIT)</strong> with an M.Eng. and B.S. in <strong>Computer Science and Engineering</strong>, and a B.S. in <strong>Mathematics</strong>.
+            <br><br>
+            My work focuses on building models that combine language, vision, and time series data to create AI systems that learn continuously and reason safely. I've pre-trained <strong>foundation models</strong> for wearable sensors, contributed to <strong>multimodal LLM pipelines</strong> using <strong>RL-based post-training</strong>, and led image-text interleaved <strong>supervised fine-tuning</strong> for next-generation multimodal systems. This work has helped power safe and personalized health features on billions of devices.
+            <br><br>
+            I'm passionate about advancing next-generation LLMs that are <strong>grounded</strong>, <strong>persistent</strong>, and <strong>action-capable</strong>, and I enjoy collaborating on bold directions in foundation models and intelligent systems.
+            <br><br>
+            My CV, along with a list of <strong>publications</strong> and <strong>patents</strong>, can be found <a href="files/resume.pdf" class="resume-link">here<svg fill="currentColor" viewBox="0 0 20 20"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg></a>.
 
+        </p>
+        
+        <div class="links">
+            <a href="mailto:agnikumar.ea@gmail.com" class="link-button">
+                <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+                Email
+            </a>
+            
+            <a href="https://www.linkedin.com/in/agnikumar/" target="_blank" class="link-button">
+                <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                </svg>
+                LinkedIn
+            </a>
 
-  <body>
-
-    <header class="site-header">
-
-  <div class="wrapper">
-
-    
-
-    <nav class="site-nav">
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
-
-      <div class="trigger">
-        <!-- About -->
-        <a class="page-link" href="/">about</a>
-
-        <!-- Blog -->
-        <!-- <a class="page-link" href="/blog/">blog</a> -->
-
-        <!-- Pages -->  
-            <a class="page-link" href="/projects/">projects</a>
-          
-            <a class="page-link" href="/publications/">publications</a>
-          
-        <!-- CV link -->
-        <a class="page-link" href="/assets/files/resume.pdf">vitae</a>
-
-      </div>
-    </nav>
-
-  </div>
-
-</header>
-
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="post">
-
-  <header class="post-header">
-    <h1 class="post-title"><strong>Agni</strong> Kumar</h1>
-    <h5 class="post-description">Machine Learning + Computer Science @ <a href="https://www.eecs.mit.edu/">MIT EECS</a></h5>
-  </header>
-
-  <article class="post-content <strong>Agni</strong> Kumar clearfix">
-    
-  <div class="profile col one right">
-    
-    <img class="one" src="/assets/img/prof_pic.jpg">
-      <!-- <img class="one" src="/assets/img/prof_pic.jpg" style="width:250px;"> -->
-    
-      <div class="address">
-        <p><i class="fab fa-wpforms"></i> <a href="assets/files/resume.pdf" target="_blank" title="Resume/CV">Resume/CV</a></p>
-
-      </div>
-    
-  </div>
-
-
-<p>Hi! I’m a student at <a href="http://www.mit.edu/">MIT</a> majoring in Computer Science and Mathematics, with a minor in Economics.</p>
-
-<p>I enjoy working on computational cognitive modeling and reinforcement learning problems, and have research interests in deep learning. This coming spring, I’ll be interning at Apple AI Research as part of the <a href="https://turi.com/">Turi team</a> under the mentorship of <a href="https://homes.cs.washington.edu/~ebfox/">Emily Fox</a>, applying machine learning insights to healthcare.</p>
-
-<p>To start off 2019, I’ll be traveling to India to engage in humanistic co-design and perform fieldwork exploring how computation can aid people living with disabilities in regions with less accommodating infrastructure than in the US. My love for assistive technology has grown over the past year. Last summer, I worked on a <a href="https://www.microsoft.com/en-us/seeing-ai">Seeing AI</a>, a Microsoft Research spinoff; I enjoyed the experience immensely, and after researching at the <a href="http://web.mit.edu/sinhalab/">Sinha Lab</a> where I investigated habituation profiles across a range of sensory modalities in autism, took up a related side project. I’ve always wanted to work on technologies to improve people’s lives, and hope to one day work at the intersection of machine learning and accessibility.</p>
-
-<p>When I'm not working, I like to play the violin, take space photos, and make videos on <a href="https://www.youtube.com/user/AgniAsmi">YouTube</a>.</p>
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
-
-  </article>
-
-<!-- <div class="img_row"> -->
-    <img class="first" src="/assets/img/dumbbell_nebula.JPG" style="width:229px;">
-    <img class="second" src="/assets/img/eagle_nebula.png" style="width:229px;">
-    <img class="third" src="/assets/img/whirlpool_galaxy.JPG" style="width:229px;">
-    <!-- <img class="fourth" src="/assets/img/ring_nebula.jpg" style="width:200px;transform:rotate(90deg);"> -->
-<!-- </div> -->
-
-    <div class="social">
-  <span class="contacticon center">
-    <a href="mailto:%61%67%6E%69%6B@%6D%69%74.%65%64%75"><i class="fas fa-envelope"></i></a>
-    
-    <a href="https://scholar.google.com/citations?user=kUdl0LIAAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
-    <a href="https://github.com/agnikumar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/agnikumar" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-    <!-- <a href="https://www.youtube.com/user/AgniAsmi" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a> -->
-       
-  </span>
-
-  <div class="col three caption">
-    
-  </div>
-</div>
-
-</div>
-
-      </div>
+            <a href="https://github.com/agnikumar" target="_blank" class="link-button">
+                <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                </svg>
+                GitHub
+            </a>
+            
+            <a href="https://medium.com/@agnikumar" target="_blank" class="link-button">
+                <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+                Blog
+            </a>
+        </div>
     </div>
-
-    <footer>
-
-  <div class="wrapper" align="center">
-    &copy; Copyright 2018 Agni Kumar.
-    <!-- Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>. -->
-  </div>
-
-</footer>
-
-    <!-- Load jQuery -->
-<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-
-<!-- Load Common JS -->
-<script src="/assets/js/common.js"></script>
-
-<!-- Load KaTeX -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js"></script>
-<script src="/assets/js/katex.js"></script>
-
-<!-- Include custom icon fonts -->
-<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
-<link rel="stylesheet" href="/assets/css/academicons.min.css">
-
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-XXXXXXXXX', 'auto');
-ga('send', 'pageview');
-</script>
-
-  </body>
-
+</body>
 </html>
